@@ -107,6 +107,7 @@
             this.DecimalButton.TabIndex = 18;
             this.DecimalButton.Text = ".";
             this.DecimalButton.UseVisualStyleBackColor = true;
+            this.DecimalButton.Click += new System.EventHandler(this.DecimalButton_Click);
             // 
             // ZeroButton
             // 
@@ -266,6 +267,7 @@
             this.BackButton.TabIndex = 2;
             this.BackButton.Text = "<-";
             this.BackButton.UseVisualStyleBackColor = false;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // ClearButton
             // 
@@ -309,6 +311,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
+            this.Load += new System.EventHandler(this.Calculator_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
